@@ -15,9 +15,9 @@ void setup() {
 
 void loop() {
   String message = "SUJAL JAIN";
-//  if (digitalRead(buttonPin) == LOW) {
+  if (digitalRead(buttonPin) == LOW) {
     convertAndBlink(message);
-//  }
+  }
 }
 
 void dot() {
