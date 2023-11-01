@@ -22,16 +22,16 @@ void loop() {
 
 void dot() {
   digitalWrite(ledPin, HIGH);
-  delay(200);
+  delay(100);
   digitalWrite(ledPin, LOW);
-  delay(200);
+  delay(100);
 }
 
 void dash() {
   digitalWrite(ledPin, HIGH);
-  delay(600);
+  delay(300);
   digitalWrite(ledPin, LOW);
-  delay(200);
+  delay(100);
 }
 
 void convertAndBlink(String message) {
@@ -49,9 +49,9 @@ void convertAndBlink(String message) {
           dash();
         }
       }
-      delay(600);  // Pause between characters
+      delay(300);  // Pause between letters
     } else if (c == ' ') {
-      delay(1200);  // Pause between words
+      delay(700);  // Pause between words
     }
   }
 }
